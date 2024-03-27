@@ -1,6 +1,4 @@
-## [OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers (NeurIPS 2021)](https://arxiv.org/pdf/2105.14148.pdf)
-
-![OpenMatch Overview](images/consistency.png)
+## [ANEDL: Adaptive Negative Evidential Deep Learning for Open-Set Semi-supervised Learning (AAAI 2024)](https://arxiv.org/pdf/2303.12091.pdf)
 
 
 This is an PyTorch implementation of OpenMatch.
