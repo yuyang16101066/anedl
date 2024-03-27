@@ -39,7 +39,7 @@ sh test.sh
 
 ### Trained models
 
-See Result0/cifar100-80-50.pth.tar
+See Results0/cifar100-80-50.pth.tar
 
 ### Acknowledgement
 This repository depends a lot on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match) implementation.
