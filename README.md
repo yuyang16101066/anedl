@@ -7,7 +7,10 @@ This is an PyTorch implementation of ANEDL. If you have any questions, please co
 
 
 ## Requirements
+
+```
 pip install -r requirement.txt
+```
 
 ## Usage
 
@@ -15,8 +18,8 @@ pip install -r requirement.txt
 
 ```
 mkdir data
-
 ```
+
 Download [CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html) and put it under ./data.
 
 ### Train
