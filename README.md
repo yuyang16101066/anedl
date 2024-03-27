@@ -1,7 +1,7 @@
 ## [ANEDL: Adaptive Negative Evidential Deep Learning for Open-Set Semi-supervised Learning (AAAI 2024)](https://arxiv.org/pdf/2303.12091.pdf)
 
 
-This is an PyTorch implementation of ANEDL. If you have any questions, please contact me via yuyang@cse.cuhk.edu.hk
+This is an PyTorch implementation of ANEDL. If you have any questions, please contact me via yangyu@cse.cuhk.edu.hk
 
 
 
