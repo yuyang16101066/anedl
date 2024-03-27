@@ -49,7 +49,7 @@ This repository depends a lot on [OpenMatch](https://github.com/VisionLearningGr
 There are also some wonderful recent works focusing on Open-set SSL, like [SSB](https://github.com/YUE-FAN/SSB) and [IOMatch](https://github.com/nukezil/IOMatch). A blog can be found in [Awesome SSL](https://github.com/RabbitBoss/Awesome-Realistic-Semi-Supervised-Learning)
 
 ### Reference
-
+If you think our work useful. Please cite
 ```
 @article{yu2023adaptive,
   title={Adaptive Negative Evidential Deep Learning for Open-set Semi-supervised Learning},
