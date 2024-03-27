@@ -31,7 +31,7 @@ sh train.sh
 ```
 
 ### Evaluation
-Evaluate a model trained on cifar100
+Evaluate a model trained on cifar100.
 
 ```
 sh test.sh
@@ -45,8 +45,10 @@ See Results0/cifar100-80-50.pth.tar
 This repository depends a lot on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match) implementation.
  Thanks for sharing the great code base!
 
+ ### Recent Works
+There are also some wonderful recent works focusing on Open-set SSL, like [SSB](https://github.com/YUE-FAN/SSB) and [IOMatch](https://github.com/nukezil/IOMatch). A blog can be found in [Awesome SSL](https://github.com/RabbitBoss/Awesome-Realistic-Semi-Supervised-Learning)
+
 ### Reference
-If you consider using this code or its derivatives, please consider citing:
 
 ```
 @article{yu2023adaptive,
@@ -56,6 +58,3 @@ If you consider using this code or its derivatives, please consider citing:
   year={2023}
 }
 ```
-
-### Recent Works
-There are also some wonderful works focusing on Open-set SSL, like [SSB](https://github.com/YUE-FAN/SSB) and [IOMatch](https://github.com/nukezil/IOMatch). A blog can be found in [Awesome SSL](https://github.com/RabbitBoss/Awesome-Realistic-Semi-Supervised-Learning)
