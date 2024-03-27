@@ -1,76 +1,40 @@
 ## [ANEDL: Adaptive Negative Evidential Deep Learning for Open-Set Semi-supervised Learning (AAAI 2024)](https://arxiv.org/pdf/2303.12091.pdf)
 
 
-This is an PyTorch implementation of OpenMatch.
-This implementation is based on [Pytorch-FixMatch](https://github.com/kekmodel/FixMatch-pytorch).
+This is an PyTorch implementation of ANEDL.
+This implementation is based on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match).
 
 
 
 ## Requirements
-- python 3.6+
-- torch 1.4
-- torchvision 0.5
-- tensorboard
-- numpy
-- tqdm
-- sklearn
-- apex (optional)
-
-See [Pytorch-FixMatch](https://github.com/kekmodel/FixMatch-pytorch) for the details.
+pip install -r requirement.txt
 
 ## Usage
 
 ### Dataset Preparation
-This repository needs CIFAR10, CIFAR100, or ImageNet-30 to train a model.
-
-To fully reproduce the results in evaluation, we also need SVHN, LSUN, ImageNet
-for CIFAR10, 100, and LSUN, DTD, CUB, Flowers, Caltech_256, Stanford Dogs for ImageNet-30.
-To prepare the datasets above, follow [CSI](https://github.com/alinlab/CSI).
+Download [CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)
 
 
 ```
 mkdir data
-ln -s path_to_each_dataset ./data/.
 
-## unzip filelist for imagenet_30 experiments.
-unzip files.zip
 ```
 
-All datasets are supposed to be under ./data.
+The dataset should be under ./data.
 
 ### Train
-Train the model by 50 labeled data per class of CIFAR-10 dataset:
-
-```
-sh run_cifar10.sh 50 save_directory
-```
-
-Train the model by 50 labeled data per class of CIFAR-100 dataset, 55 known classes:
-
-```
-sh run_cifar100.sh 50 10 save_directory
-```
-
 
 Train the model by 50 labeled data per class of CIFAR-100 dataset, 80 known classes:
 
 ```
-sh run_cifar100.sh 50 15 save_directory
+sh train.sh
 ```
-
-
-Run experiments on ImageNet-30:
-
-```
-sh run_imagenet.sh save_directory
-```
-
 
 ### Evaluation
-Evaluate a model trained on cifar10
+Evaluate a model trained on cifar100
 
 ```
-sh run_eval_cifar10.sh trained_model.pth
+sh test
 ```
 
 ### Trained models
@@ -81,20 +45,17 @@ Coming soon.
 - ImageNet-30
 
 ### Acknowledgement
-This repository depends a lot on [Pytorch-FixMatch](https://github.com/kekmodel/FixMatch-pytorch) for FixMatch implementation, and [CSI](https://github.com/alinlab/CSI) for anomaly detection evaluation.
- Thanks for sharing the great code bases!
+This repository depends a lot on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match) implementation.
+ Thanks for sharing the great code base!
 
 ### Reference
-This repository is contributed by [Kuniaki Saito](http://cs-people.bu.edu/keisaito/).
 If you consider using this code or its derivatives, please consider citing:
 
 ```
-@article{saito2021openmatch,
-  title={OpenMatch: Open-set Consistency Regularization for Semi-supervised Learning with Outliers},
-  author={Saito, Kuniaki and Kim, Donghyun and Saenko, Kate},
-  journal={arXiv preprint arXiv:2105.14148},
-  year={2021}
+@article{yu2023adaptive,
+  title={Adaptive Negative Evidential Deep Learning for Open-set Semi-supervised Learning},
+  author={Yu, Yang and Deng, Danruo and Liu, Furui and Jin, Yueming and Dou, Qi and Chen, Guangyong and Heng, Pheng-Ann},
+  journal={arXiv preprint arXiv:2303.12091},
+  year={2023}
 }
 ```
-
-# anedl
