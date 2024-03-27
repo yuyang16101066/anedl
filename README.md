@@ -1,8 +1,8 @@
 ## [ANEDL: Adaptive Negative Evidential Deep Learning for Open-Set Semi-supervised Learning (AAAI 2024)](https://arxiv.org/pdf/2303.12091.pdf)
 
 
-This is an PyTorch implementation of ANEDL.
-This implementation is based on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match).
+This is an PyTorch implementation of ANEDL. If you have any questions, please contact me via yuyang@cse.cuhk.edu.hk
+
 
 
 
@@ -12,15 +12,12 @@ pip install -r requirement.txt
 ## Usage
 
 ### Dataset Preparation
-Download [CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html)
-
 
 ```
 mkdir data
 
 ```
-
-The dataset should be under ./data.
+Download [CIFAR100](https://www.cs.toronto.edu/~kriz/cifar.html) and put it under ./data.
 
 ### Train
 
@@ -34,15 +31,12 @@ sh train.sh
 Evaluate a model trained on cifar100
 
 ```
-sh test
+sh test.sh
 ```
 
 ### Trained models
-Coming soon.
 
-- [CIFAR10-50-labeled](https://drive.google.com/file/d/1oNWAR8jVlxQXH0TMql1P-c7_i5-taU2T/view?usp=sharing)
-- [CIFAR100-50-labeled-55class](https://drive.google.com/file/d/1T5a_p4XUEOexEnjLWpGd-3pme4OzJ2pP/view?usp=sharing)
-- ImageNet-30
+See Result0/cifar100-80-50.pth.tar
 
 ### Acknowledgement
 This repository depends a lot on [OpenMatch](https://github.com/VisionLearningGroup/OP_Match) implementation.
@@ -59,3 +53,6 @@ If you consider using this code or its derivatives, please consider citing:
   year={2023}
 }
 ```
+
+### Recent Works
+There are also some wonderful works focusing on Open-set SSL, like [SSB](https://github.com/YUE-FAN/SSB) and [IOMatch](https://github.com/nukezil/IOMatch). A blog can be found in [Awesome SSL](https://github.com/RabbitBoss/Awesome-Realistic-Semi-Supervised-Learning)

@@ -14,7 +14,7 @@ from utils import AverageMeter, ova_loss,\
     save_checkpoint, ova_ent, compute_fmse,\
     test, test_ood, exclude_dataset, exclude_dataset_ratio
 import wandb
-wandb.init(project="cifar100_80_50_upload")
+wandb.init(project="xxx")
 
 logger = logging.getLogger(__name__)
 best_acc = 0
